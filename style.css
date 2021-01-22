@@ -1,3 +1,9 @@
+:root{
+    --white:white;
+    --black:black;
+    --rain:#4972a1;
+    --sun:#a14f49;
+}
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +42,7 @@
 .time-display{
     position: absolute;
     bottom: 10%;
-    color: white;
+    color: var(--white);
     font-size: 50px;
 }
 
@@ -50,18 +56,18 @@ video {
 
 .time-select button,
 .sound-picker button{
-    color: white;
+    color: var(--white);
     width: 30%;
     height: 10%;
     background: none;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     cursor: pointer;
     border-radius: 5px;
     font-size: 20px;
 }
 .time-select button:hover{
-    color: black;
-    background: white
+    color: var(--black);
+    background: var(--white)
 }
 .sound-picker button{
     border:  none;
@@ -72,10 +78,10 @@ video {
 }
 
 .sound-picker button:nth-child(1){
-    background: #4972a1;
+    background: var(--rain);
 }
 .sound-picker button:nth-child(2){
-    background: #a14f49;
+    background: var(--sun);
 }
 .sound-picker button img{
     height: 100%;
